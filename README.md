@@ -13,7 +13,7 @@ accepted as a Full Paper to [VISAPP '23](https://visapp.scitevents.org/) (part o
 
 Main Architecture          | Attention guiding
 :-------------------------:|:-------------------------:
-<img src="docs/Images/2_main.jpg" width="750">  | <img src="docs/Images/attention_guiding.gif" width="250">
+<img src="docs/Images/2_main.jpg" width="750">  | <img src="docs/Images/attention_guiding.gif" width="220">
 
 
 </p>
