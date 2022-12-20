@@ -11,9 +11,9 @@ accepted as a Full Paper to [VISAPP '23](https://visapp.scitevents.org/) (part o
 
 <p align="center"> 
 
-Main Architecture             |  Main idea of the attention adjustment
+Main Architecture          | Attention guiding (see Eq. 3 in the paper)
 :-------------------------:|:-------------------------:
-<img src="docs/Images/2_main.jpg" width="700">  | <img src="docs/Images/2_main.jpg" width="300">
+<img src="docs/Images/2_main.jpg" width="750">  | <img src="docs/Images/Final.gif" width="300">
 
 
 </p>
