@@ -9,7 +9,14 @@ accepted as a Full Paper to [VISAPP '23](https://visapp.scitevents.org/) (part o
 
 ## Approach
 
-<p align="center"> <img src="docs/Images/2_main.jpg" width="700"> </p>
+<p align="center"> 
+
+Main Architecture             |  Main idea of the attention adjustment
+:-------------------------:|:-------------------------:
+<img src="docs/Images/2_main.jpg" width="700">  | <img src="docs/Images/2_main.jpg" width="300">
+
+
+</p>
 
 <p align="justify">  In this work, we introduce a simple yet effective approach to improve the performance of the standard Vision Transformer architecture at FGVC. Our method, named SalientMask-Guided Vision Transformer (SM-ViT), utilises a salient object detection module comprising an off-the-shelf saliency detector to produce a salient mask likely focusing on the potentially discriminative foreground object regions in an image. The saliency mask is then utilised within our ViT-like Salient Mask-Guided Encoder (SMGE) to boost the discriminabil-ity of the standard self-attention mechanism, thereby focusing on more distinguishable tokens. </p>
 
