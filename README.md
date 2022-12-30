@@ -40,19 +40,19 @@ All models in our experiments are first initialised with publicly available pre-
 
 ### Results
 
-| Model         |  Baseline  |  Input Size | St. Dogs | Weights   | CUB-200 | Weights    | NABirds | Weights  | 
+| Model         |  Baseline  |  Input Size | St. Dogs | *Weights*   | CUB-200 | *Weights*    | NABirds | *Weights*  | 
 |---------------|------------|:-----------:|:-------:|:-----------|:-------:|:-----------|:-------:|:---------|
 | Vanilla ViT   | ViT-B/16   |  448x448    |  91.4   | -          |  90.6   | -          |  89.6   | -        |
-| SM-ViT (ours) | ViT-B/16   |  400x400    |  92.3   | [link]()   |  91.6   | [link]()   |  90.2   | [link]() |
-| SM-ViT (ours) | ViT-B/16   |  448x448    |  WIP    | -          |  WIP    | -          |  90.5   | [link]() |
+| SM-ViT (ours) | ViT-B/16   |  400x400    |  92.3   | [link](https://mbzuaiac-my.sharepoint.com/:u:/g/personal/dmitry_demidov_mbzuai_ac_ae/ETgkV4GFNVtKjvADenZsZZsBCo07hWu5EazVuANq5_i3bQ?e=TCvN5Y)   |  91.6   | [link](https://mbzuaiac-my.sharepoint.com/:u:/g/personal/dmitry_demidov_mbzuai_ac_ae/ESEHQadrOaJAo3NiW8Sok_IBn6j9m5V7-BfpCOO0yqbK7w?e=dDQtpb)   |  90.2   | [link](https://mbzuaiac-my.sharepoint.com/:u:/g/personal/dmitry_demidov_mbzuai_ac_ae/EVyqOsO5o69CkkEtngxmSVkBfgyq5fqedZyHOrY-F_PUPw?e=MFVgRT) |
+| SM-ViT (ours) | ViT-B/16   |  448x448    |  WIP    | -          |  WIP    | -          |  90.5   | [link](https://mbzuaiac-my.sharepoint.com/:u:/g/personal/dmitry_demidov_mbzuai_ac_ae/Ec7ZMacJlo9Kgmvp4lk_ppgBkDe1CAuaAPdNzukRlSpSxw?e=3yjM80) |
 | SM-ViT (ours) | ViT-B/16   |  560x560    |  WIP    | -          |  WIP    | -          |  90.7   | [link]() |
 
 
 #### Experimental (outside the paper)
 
-| Model                         |  Input Size | St. Dogs | Weights   | CUB-200 | Weights    | NABirds | Weights  | 
+| Model                         |  Input Size | St. Dogs | *Weights*   | CUB-200 | *Weights*    | NABirds | *Weights*  | 
 |-------------------------------|:-----------:|:-------:|:-----------|:-------:|:-----------|:-------:|:---------|
-| SM-ViT + Advanced guiding | 400x400     |  -      | -   |  91.7   | [link]()   |  -   | - |
+| SM-ViT + Advanced guiding | 400x400     |  -      | -   |  91.7   | [link](https://mbzuaiac-my.sharepoint.com/:u:/g/personal/dmitry_demidov_mbzuai_ac_ae/EXfZdBmHZFtLpcwkli-cOfABtowHXUR2oX03TMdEtJcc6w?e=EWi56c)   |  -   | - |
 
 
 <hr />
