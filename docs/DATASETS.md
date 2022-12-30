@@ -10,10 +10,6 @@ In our experiments, the datasets were organised in the below-mentioned respectiv
 
 ```
 Stanford_Dogs/
-|–– Annotation/ # contains folders with annotations
-|   |–– n02085620-Chihuahua/
-|   |–– n02085782-Japanese_spaniel/
-|   |–– ...
 |–– Images/ # contains folders with images
 |   |–– n02085620-Chihuahua/
 |   |–– n02085782-Japanese_spaniel/
@@ -51,7 +47,7 @@ CUB_200_2011/
 
 ```
 NABirds/
-|–– images/ # contains images
+|–– images/ # contains folders with images
 |   |–– 0295/
 |   |–– 0295/
 |   |–– ...
