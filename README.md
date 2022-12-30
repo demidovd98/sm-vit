@@ -67,7 +67,7 @@ For installation and other package requirements, please follow the instructions 
 For datasets preparation, please follow the instructions in [DATASETS.md](docs/DATASETS.md).
 
 ## Training and Evaluation
-For training, evaluating and reproducing the results, please follow the instructions in [RUN.md](docs/RUN.md).
+For training and evaluation, please follow the instructions in [RUN.md](docs/RUN.md).
 
 
 <hr />
