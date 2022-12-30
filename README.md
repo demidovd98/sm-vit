@@ -33,18 +33,26 @@ Main Architecture          | Attention guiding (see Eq. 3)
 
 <hr />
 
-   
+
 # 🐘 Model Zoo
 
 All models in our experiments are first initialised with publicly available pre-trained [ViT/B-16 model's weights](https://console.cloud.google.com/storage/browser/vit_models;tab=objects?prefix=&forceOnObjectsSortingFiltering=false) and then fine-tuned on the corresponding datasets.
 
 ### Results
 
-| Model                         | Input Size | St. Dogs| CUB     | NABirds |     Weights   |
-|-------------------------------|:----------:|:-------:|:-------:|:-------:|:-------------:|
-| SM-ViT fine-tuned on St. Dogs | 400x400    |  92.3   |  -      |    -    | [link]()      |
-| SM-ViT fine-tuned on CUB      | 400x400    |  -      |  91.6   |    -    | [link]()      |
-| SM-ViT fine-tuned on NABirds  | 448x448    |  -      |  -      |   90.5  | [link]()      |
+| Model         |  Baseline  |  Input Size | St. Dogs | Weights   | CUB-200 | Weights    | NABirds | Weights  | 
+|---------------|------------|:-----------:|:-------:|:-----------|:-------:|:-----------|:-------:|:---------|
+| Vanilla ViT   | ViT-B/16   |  448x448    |  91.4   | -          |  90.6   | -          |  89.6   | -        |
+| SM-ViT (ours) | ViT-B/16   |  400x400    |  92.3   | [link]()   |  91.6   | [link]()   |  90.2   | [link]() |
+| SM-ViT (ours) | ViT-B/16   |  448x448    |  WIP    | -          |  WIP    | -          |  90.5   | [link]() |
+| SM-ViT (ours) | ViT-B/16   |  560x560    |  WIP    | -          |  WIP    | -          |  90.7   | [link]() |
+
+
+#### Experimental (outside the paper)
+
+| Model                         |  Input Size | St. Dogs | Weights   | CUB-200 | Weights    | NABirds | Weights  | 
+|-------------------------------|:-----------:|:-------:|:-----------|:-------:|:-----------|:-------:|:---------|
+| SM-ViT + Advanced guiding | 400x400     |  -      | -   |  91.7   | [link]()   |  -   | - |
 
 
 <hr />
