@@ -14,18 +14,14 @@ module load cuda-xx.x
 ```
 
 1) Setup a conda environment:
-
 ```bash
-# Create a conda environment
-conda create -y -n smvit python=3.6.13
+# Create a conda environment from the environment.yml file:
+conda env create --name smvit -f environment.yml
 # Activate the environment
 conda activate smvit
-# Install requirements
-pip install -r requirements.txt
 ```
 
-2) [Recommended] Install Apex library for mixed-precision training:
-
+2) [Recommended] Install the Apex library for mixed-precision training:
 ```
 git clone https://github.com/NVIDIA/apex
 cd apex
