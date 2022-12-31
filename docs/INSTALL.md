@@ -21,9 +21,16 @@ conda env create --name smvit -f environment.yml
 conda activate smvit
 ```
 
-2) [Recommended] Install the Apex library for mixed-precision training:
-```
-git clone https://github.com/NVIDIA/apex
-cd apex
-pip install -v --disable-pip-version-check --no-cache-dir --global-option="--cpp_ext" --global-option="--cuda_ext" ./
-```
+2) Install the Apex library for mixed-precision training:
+
+    - Via conda [Recommended]:
+    ```
+    conda install -c conda-forge nvidia-apex=0.1
+    ```
+
+    - From source:
+    ```
+    git clone https://github.com/NVIDIA/apex
+    cd apex
+    pip install -v --disable-pip-version-check --no-cache-dir --global-option="--cpp_ext" --global-option="--cuda_ext" ./
+    ```
