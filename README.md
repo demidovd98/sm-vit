@@ -75,14 +75,14 @@ For training and evaluation, please follow the instructions in [RUN.md](docs/RUN
 
 # 🆕 News
 * **(Dec 20, 2022)** 
-  * Initial commit.
-  * Repo description added.
+  * Repo description added (README.md).
 
 * **(Dec 30, 2022)** 
   * Pretrained models are released.
-
+  * Code instructions added (INSTALL.md, DATASET.md, RUN.md).
+  
 * **(Soon)** 
-  * Training and evaluation code are released.
+  * Training and evaluation code is released.
 
 
 <hr />
