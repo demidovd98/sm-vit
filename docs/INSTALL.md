@@ -25,7 +25,11 @@ conda activate smvit
 
     - Via conda [Recommended]:
     ```
-    conda install -c conda-forge nvidia-apex=0.1
+    ## Both commands are necessary
+    # May throw a warning, but it is okay
+    conda install -c conda-forge nvidia-apex
+    # Answer 'Yes' when a package upgrade will be inquired
+    conda install -c conda-forge nvidia-apex=0.1 
     ```
 
     - From source:
