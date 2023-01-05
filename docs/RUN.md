@@ -4,7 +4,8 @@ For training and evaluation, please, follow the below-mentioned respective instr
 
 NOTE: In case you have multiple CUDA versions installed, please, make sure to initialise the appropriate system CUDA version before running any command.
 ```bash
-module load cuda-xx.x
+# <xx.x> - CUDA version number
+module load cuda-xx.x 
 ```
 
 <hr />
