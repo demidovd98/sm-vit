@@ -64,10 +64,10 @@ All models in our experiments are first initialised with publicly available pre-
 # 🧋 How to start
 
 ## Installation 
-For environment installation, please follow the instructions in [INSTALL.md](docs/INSTALL.md). 
+For environment installation and pre-trained models preparation, please follow the instructions in [INSTALL.md](docs/INSTALL.md). 
 
 ## Data preparation
-For datasets and pre-trained models preparation, please follow the instructions in [DATA.md](docs/DATA.md).
+For datasets preparation, please follow the instructions in [DATASETS.md](docs/DATASETS.md).
 
 ## Training and Evaluation
 For training and evaluation, please follow the instructions in [RUN.md](docs/RUN.md).
