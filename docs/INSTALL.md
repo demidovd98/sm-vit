@@ -22,6 +22,7 @@ module load cuda-xx.x
 ```
 
 1) Setup a conda environment:
+
     - With Conda [Recommended]:
     ```bash
     # Create a conda environment with dependencies from the environment.yml file
@@ -30,7 +31,7 @@ module load cuda-xx.x
     conda activate smvit
     ```
     
-    - With PIP:
+    - With PIP [Not Tested]:
     ```bash
     # Create a conda environment
     conda create -n smvit python=3.6.11
@@ -43,7 +44,7 @@ module load cuda-xx.x
 
 2) Install the Apex library for mixed-precision training:
 
-    - Via conda [Our choice]:
+    - With conda [Our choice]:
     ```bash
     ## Both commands are necessary
     # May throw warnings, but it is okay
@@ -61,6 +62,7 @@ module load cuda-xx.x
     ```
 
 3) [Additional] In case of runtime errors related to numpy or scikit-learn packages, force downgrade numpy to the '1.15.4' version:
+
     ```bash
     pip install numpy==1.15.4
     ```
@@ -69,38 +71,55 @@ module load cuda-xx.x
 <hr>
 
 
-## II. Download Pre-trained 3d-party Models
+## II. Download Pre-trained Models
 
 ### U2-Net:
 
 _NOTE: This model is required for every experiment (training from scratch, fine-tuning, inference)._
 
-Download the pre-trained model from the U2-Net author's [Google Drive link](https://drive.google.com/file/d/1ao1ovG1Qtx4b7EoskHXmi2E9rp5CHLcZ/view?usp=sharing) ("u2net.pth" - 176.3 MB).
+Download the pre-trained model from the U2-Net author's [Google Drive link](https://drive.google.com/file/d/1ao1ovG1Qtx4b7EoskHXmi2E9rp5CHLcZ/view?usp=sharing) ("u2net.pth" - 176.3 MB). <br>
 P.S. Original shared link was taken from [here](https://github.com/xuebinqin/U-2-Net#usage-for-salient-object-detection).
 
-The model must be located in:
+Place the model in the following path:
 ```
 sm-vit/
 |–– U2Net/
-|   |–– saved_models/
-|   |   |–– u2net/
+|   |–– model/
+|   |   |–– pre_trained/
 |   |   |   |–– u2net.pth
 ```
 
 
-### ViT-B/16:
+### SM-ViT (ours):
+
+_NOTE: This model is required for fine-tuning and inference._
+
+Download a pre-trained model for the dataset of interest from our [moodel zoo](https://github.com/demidovd98/sm-vit#-model-zoo).
+
+Place the model in the following path:
+```
+sm-vit/
+|–– models/
+|   |–– pre_trained/
+|   |   |–– <model_name>.bin
+```
+
+
+### Vanilla ViT-B/16:
 
 _NOTE: This model is required for training from scratch only._
 
-Download the pre-trained model from the ViT author's [Google Cloud link](https://console.cloud.google.com/storage/browser/_details/vit_models/imagenet21k/ViT-B_16.npz) ("ViT-B_16.npz" - 393.7 MB).
+Download the pre-trained model from the ViT author's [Google Cloud link](https://console.cloud.google.com/storage/browser/_details/vit_models/imagenet21k/ViT-B_16.npz) ("ViT-B_16.npz" - 393.7 MB). <br>
+P.S. Original shared link was taken from [here](https://github.com/jeonsworld/ViT-pytorch#1-download-pre-trained-model-googles-official-checkpoint).
+
 ```bash
 wget https://storage.googleapis.com/vit_models/imagenet21k/ViT-B_16.npz
 ```
-P.S. Original shared link was taken from [here](https://github.com/jeonsworld/ViT-pytorch#1-download-pre-trained-model-googles-official-checkpoint).
 
-The model must be located in:
+Place the model in the following path:
 ```
 sm-vit/
-|–– checkpoint/
-|   |–– ViT-B_16.npz
+|–– models/
+|   |–– pre_trained/
+|   |   |–– ViT-B_16.npz
 ```
