@@ -41,17 +41,17 @@ Main Architecture          | Attention guiding (see Eq. 3)
 
 All models in our experiments are first initialised with publicly available pre-trained [ViT/B-16 model's weights](https://console.cloud.google.com/storage/browser/vit_models;tab=objects?prefix=&forceOnObjectsSortingFiltering=false) and then fine-tuned on the corresponding datasets.
 
-### Results
+### Main Models
 
 | Model         |  Baseline  |  Input Size | St. Dogs | *Weights*   | CUB-200 | *Weights*    | NABirds | *Weights*  | 
 |---------------|:----------:|:-----------:|:-------:|:-----------|:-------:|:-----------|:-------:|:---------|
 | Vanilla ViT   | ViT-B/16   |  448x448    |  91.4   | -          |  90.6   | -          |  89.6   | -        |
 | SM-ViT <br> (ours) | ViT-B/16   |  400x400    |  92.3   | [link](https://mbzuaiac-my.sharepoint.com/:u:/g/personal/dmitry_demidov_mbzuai_ac_ae/ETgkV4GFNVtKjvADenZsZZsBCo07hWu5EazVuANq5_i3bQ?e=TCvN5Y)   |  91.6   | [link](https://mbzuaiac-my.sharepoint.com/:u:/g/personal/dmitry_demidov_mbzuai_ac_ae/ESEHQadrOaJAo3NiW8Sok_IBn6j9m5V7-BfpCOO0yqbK7w?e=dDQtpb)   |  90.2   | [link](https://mbzuaiac-my.sharepoint.com/:u:/g/personal/dmitry_demidov_mbzuai_ac_ae/EVyqOsO5o69CkkEtngxmSVkBfgyq5fqedZyHOrY-F_PUPw?e=MFVgRT) |
-| SM-ViT <br> (ours) | ViT-B/16   |  448x448    |  WIP    | -          |  WIP    | -          |  90.5   | [link](https://mbzuaiac-my.sharepoint.com/:u:/g/personal/dmitry_demidov_mbzuai_ac_ae/Ec7ZMacJlo9Kgmvp4lk_ppgBkDe1CAuaAPdNzukRlSpSxw?e=3yjM80) |
-| SM-ViT <br> (ours) | ViT-B/16   |  560x560    |  WIP    | -          |  WIP    | -          |  90.7   | [link](https://mbzuaiac-my.sharepoint.com/:u:/g/personal/dmitry_demidov_mbzuai_ac_ae/EeLk-WK5vfNNrIqu7FUN4c0Bn-QtFKRUUwxZLwAKfRyPUw?e=aCWWEH) |
+| SM-ViT <br> (ours) | ViT-B/16   |  448x448    |      |           |      |           |  90.5   | [link](https://mbzuaiac-my.sharepoint.com/:u:/g/personal/dmitry_demidov_mbzuai_ac_ae/Ec7ZMacJlo9Kgmvp4lk_ppgBkDe1CAuaAPdNzukRlSpSxw?e=3yjM80) |
+| SM-ViT <br> (ours) | ViT-B/16   |  560x560    |      |           |      |           |  90.7   | [link](https://mbzuaiac-my.sharepoint.com/:u:/g/personal/dmitry_demidov_mbzuai_ac_ae/EeLk-WK5vfNNrIqu7FUN4c0Bn-QtFKRUUwxZLwAKfRyPUw?e=aCWWEH) |
 
 
-#### Experimental (outside the paper)
+#### Experimental Models (outside the paper)
 
 | Model                         |  Input Size | St. Dogs | *Weights*   | CUB-200 | *Weights*    | NABirds | *Weights*  | 
 |-------------------------------|:-----------:|:-------:|:-----------|:-------:|:-----------|:-------:|:---------|
@@ -64,10 +64,10 @@ All models in our experiments are first initialised with publicly available pre-
 # 🧋 How to start
 
 ## Installation 
-For environment installation and downloading required 3d-party models, please follow the instructions in [INSTALL.md](docs/INSTALL.md). 
+For environment installation, please follow the instructions in [INSTALL.md](docs/INSTALL.md). 
 
 ## Data preparation
-For datasets preparation, please follow the instructions in [DATASETS.md](docs/DATASETS.md).
+For datasets and pre-trained models preparation, please follow the instructions in [DATA.md](docs/DATA.md).
 
 ## Training and Evaluation
 For training and evaluation, please follow the instructions in [RUN.md](docs/RUN.md).
