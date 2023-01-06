@@ -55,7 +55,7 @@ All models in our experiments are first initialised with publicly available pre-
 
 | Model                         |  Input Size | St. Dogs | *Weights*   | CUB-200 | *Weights*    | NABirds | *Weights*  | 
 |-------------------------------|:-----------:|:-------:|:-----------|:-------:|:-----------|:-------:|:---------|
-| SM-ViT <br> + Advanced guiding | 400x400     |  -      | -   |  91.7   | [link](https://mbzuaiac-my.sharepoint.com/:u:/g/personal/dmitry_demidov_mbzuai_ac_ae/EXfZdBmHZFtLpcwkli-cOfABtowHXUR2oX03TMdEtJcc6w?e=EWi56c)   |  -   | - |
+| SM-ViT <br> + Advanced guiding | 400x400     |  -      | -   |  91.7   | [link](https://mbzuaiac-my.sharepoint.com/:u:/g/personal/dmitry_demidov_mbzuai_ac_ae/EXfZdBmHZFtLpcwkli-cOfABtowHXUR2oX03TMdEtJcc6w?e=EWi56c)   |  90.7   | [link](https://mbzuaiac-my.sharepoint.com/:u:/g/personal/dmitry_demidov_mbzuai_ac_ae/EUiGpYiy4mZPlHlFQImWHfwBdIrOvPLMZgW69p5ApoH3xA?e=CuCDmw) |
 
 
 <hr />
