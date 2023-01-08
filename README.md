@@ -20,7 +20,10 @@ Main Architecture          | Attention guiding (see Eq. 3)
 
 <p align="justify">  In this work, we introduce a simple yet effective approach to improve the performance of the standard Vision Transformer architecture at FGVC. Our method, named SalientMask-Guided Vision Transformer (SM-ViT), utilises a salient object detection module comprising an off-the-shelf saliency detector to produce a salient mask likely focusing on the potentially discriminative foreground object regions in an image. The saliency mask is then utilised within our ViT-like Salient Mask-Guided Encoder (SMGE) to boost the discriminabil-ity of the standard self-attention mechanism, thereby focusing on more distinguishable tokens. </p>
 
+
 > **<p align="justify"> Abstract:** *Fine-grained visual classification (FGVC) is a challenging computer vision problem, where the task is to automatically recognise objects from subordinate categories. One of its main difficulties is capturing the most discriminative inter-class variances among visually similar classes. Recently, methods with Vision Transformer (ViT) have demonstrated noticeable achievements in FGVC, generally by employing the self-attention mechanism with additional resource-consuming techniques to distinguish potentially discriminative regions while disregarding the rest. However, such approaches may struggle to effectively focus on truly discriminative regions due to only relying on the inherent self-attention mechanism, resulting in the classification token likely aggregating global information from less-important background patches. Moreover, due to the immense lack of the datapoints, classifiers may fail to find the most helpful inter-class distinguishing features, since other unrelated but distinctive background regions may be falsely recognised as being valuable. To this end, we introduce a simple yet effective Salient Mask-Guided Vision Transformer (SM-ViT), where the discriminability of the standard ViT's attention maps is boosted through salient masking of potentially discriminative foreground regions. Extensive experiments demonstrate that with the standard training procedure our SM-ViT achieves state-of-the-art performance on popular FGVC benchmarks among existing ViT-based approaches while requiring fewer resources and lower input image resolution.* </p>
+
+
 
 
 ## Main Contributions
@@ -38,21 +41,21 @@ Main Architecture          | Attention guiding (see Eq. 3)
 
 All models in our experiments are first initialised with publicly available pre-trained [ViT/B-16 model's weights](https://console.cloud.google.com/storage/browser/vit_models;tab=objects?prefix=&forceOnObjectsSortingFiltering=false) and then fine-tuned on the corresponding datasets.
 
-### Results
+### Main Models
 
 | Model         |  Baseline  |  Input Size | St. Dogs | *Weights*   | CUB-200 | *Weights*    | NABirds | *Weights*  | 
 |---------------|:----------:|:-----------:|:-------:|:-----------|:-------:|:-----------|:-------:|:---------|
 | Vanilla ViT   | ViT-B/16   |  448x448    |  91.4   | -          |  90.6   | -          |  89.6   | -        |
 | SM-ViT <br> (ours) | ViT-B/16   |  400x400    |  92.3   | [link](https://mbzuaiac-my.sharepoint.com/:u:/g/personal/dmitry_demidov_mbzuai_ac_ae/ETgkV4GFNVtKjvADenZsZZsBCo07hWu5EazVuANq5_i3bQ?e=TCvN5Y)   |  91.6   | [link](https://mbzuaiac-my.sharepoint.com/:u:/g/personal/dmitry_demidov_mbzuai_ac_ae/ESEHQadrOaJAo3NiW8Sok_IBn6j9m5V7-BfpCOO0yqbK7w?e=dDQtpb)   |  90.2   | [link](https://mbzuaiac-my.sharepoint.com/:u:/g/personal/dmitry_demidov_mbzuai_ac_ae/EVyqOsO5o69CkkEtngxmSVkBfgyq5fqedZyHOrY-F_PUPw?e=MFVgRT) |
-| SM-ViT <br> (ours) | ViT-B/16   |  448x448    |  WIP    | -          |  WIP    | -          |  90.5   | [link](https://mbzuaiac-my.sharepoint.com/:u:/g/personal/dmitry_demidov_mbzuai_ac_ae/Ec7ZMacJlo9Kgmvp4lk_ppgBkDe1CAuaAPdNzukRlSpSxw?e=3yjM80) |
-| SM-ViT <br> (ours) | ViT-B/16   |  560x560    |  WIP    | -          |  WIP    | -          |  90.7   | [link]() |
+| SM-ViT <br> (ours) | ViT-B/16   |  448x448    |      |           |      |           |  90.5   | [link](https://mbzuaiac-my.sharepoint.com/:u:/g/personal/dmitry_demidov_mbzuai_ac_ae/Ec7ZMacJlo9Kgmvp4lk_ppgBkDe1CAuaAPdNzukRlSpSxw?e=3yjM80) |
+| SM-ViT <br> (ours) | ViT-B/16   |  560x560    |      |           |      |           |  90.7   | [link](https://mbzuaiac-my.sharepoint.com/:u:/g/personal/dmitry_demidov_mbzuai_ac_ae/EeLk-WK5vfNNrIqu7FUN4c0Bn-QtFKRUUwxZLwAKfRyPUw?e=aCWWEH) |
 
 
-#### Experimental (outside the paper)
+#### Experimental Models (outside the paper)
 
 | Model                         |  Input Size | St. Dogs | *Weights*   | CUB-200 | *Weights*    | NABirds | *Weights*  | 
 |-------------------------------|:-----------:|:-------:|:-----------|:-------:|:-----------|:-------:|:---------|
-| SM-ViT <br> + Advanced guiding | 400x400     |  -      | -   |  91.7   | [link](https://mbzuaiac-my.sharepoint.com/:u:/g/personal/dmitry_demidov_mbzuai_ac_ae/EXfZdBmHZFtLpcwkli-cOfABtowHXUR2oX03TMdEtJcc6w?e=EWi56c)   |  -   | - |
+| SM-ViT <br> + Advanced guiding | 400x400     |  -      | -   |  91.7   | [link](https://mbzuaiac-my.sharepoint.com/:u:/g/personal/dmitry_demidov_mbzuai_ac_ae/EXfZdBmHZFtLpcwkli-cOfABtowHXUR2oX03TMdEtJcc6w?e=EWi56c)   |  90.7   | [link](https://mbzuaiac-my.sharepoint.com/:u:/g/personal/dmitry_demidov_mbzuai_ac_ae/EUiGpYiy4mZPlHlFQImWHfwBdIrOvPLMZgW69p5ApoH3xA?e=CuCDmw) |
 
 
 <hr />
@@ -61,10 +64,10 @@ All models in our experiments are first initialised with publicly available pre-
 # 🧋 How to start
 
 ## Installation 
-For installation and other package requirements, please follow the instructions in [INSTALL.md](docs/INSTALL.md). 
+For environment installation and pre-trained models preparation, please follow the instructions in [INSTALL.md](docs/INSTALL.md). 
 
 ## Data preparation
-For datasets preparation, please follow the instructions in [DATASETS.md](docs/DATASETS.md).
+For datasets preparation, please follow the instructions in [DATASET.md](docs/DATASET.md).
 
 ## Training and Evaluation
 For training and evaluation, please follow the instructions in [RUN.md](docs/RUN.md).
@@ -75,12 +78,14 @@ For training and evaluation, please follow the instructions in [RUN.md](docs/RUN
 
 # 🆕 News
 * **(Dec 20, 2022)** 
-  * Initial commit.
-  * Repo description added.
+  * Repo description added (README.md).
 
-* **(Soon)** 
-  * Training and evaluation code are released.
+* **(Dec 30, 2022)** 
   * Pretrained models are released.
+  * Code instructions added (INSTALL.md, DATASET.md, RUN.md).
+  
+* **(Soon)** 
+  * Training and evaluation code is released.
 
 
 <hr />
