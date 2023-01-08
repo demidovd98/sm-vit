@@ -13,7 +13,7 @@ NOTE 2: Make sure that you are in the root repo's directory '.../sm-vit/':
 cd <your_path>/sm-vit
 ```
 
-NOTE 3: Make sure that the 'sm_vit' conda environment is activated (see [INSTALL.md](docs/INSTALL.md) ):
+NOTE 3: Make sure that the 'sm_vit' conda environment is activated (see [INSTALL.md](INSTALL.md) ):
 ```
 conda activate sm_vit
 ```
