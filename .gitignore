@@ -1,3 +1,11 @@
+# Personal
+models/pre_trained/
+U2Net/model/pre_trained/
+logs/
+output/
+test/
+wandb/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
