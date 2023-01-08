@@ -2,10 +2,20 @@
 
 For training and evaluation, please, follow the below-mentioned respective instructions.
 
-NOTE: In case you have multiple CUDA versions installed, please, make sure to initialise the appropriate system CUDA version before running any command.
+NOTE 1: In case you have multiple CUDA versions installed, please, make sure to initialise the appropriate system CUDA version before running any command.
 ```bash
 # <xx.x> - CUDA version number
 module load cuda-xx.x 
+```
+
+NOTE 2: Make sure that you are in the root repo's directory '.../sm-vit/':
+```
+cd <your_path>/sm-vit
+```
+
+NOTE 3: Make sure that the 'sm_vit' conda environment is activated (see [INSTALL.md](docs/INSTALL.md) ):
+```
+conda activate sm_vit
 ```
 
 <hr />
