@@ -84,9 +84,12 @@ For training and evaluation, please follow the instructions in [RUN.md](docs/RUN
   * Pretrained models are released.
   * Code instructions added (INSTALL.md, DATASET.md, RUN.md).
   
-* **(Soon)** 
+* **(Jan 09, 2023)** 
   * Training and evaluation code is released.
 
+* **(Soon)** 
+  * Optimisation
+ 
 
 <hr />
 
