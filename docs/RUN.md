@@ -26,10 +26,13 @@ conda activate sm_vit
 ### Train + Test:
 
 ```bash
-python3 -W ignore -m torch.distributed.launch --nproc_per_node 1 train.py --name cub --dataset CUB --img_size 400 --train_batch_size 16 --eval_batch_size 8 --learning_rate 0.03 --num_steps 40000 --sm_vit --coeff_max 0.3 --fp16 --low_memory --data_root '<your_dataset_path>'
+python3 -W ignore -m torch.distributed.launch --nproc_per_node 1 train.py --name dogs --dataset dogs --img_size 400 --train_batch_size 24 --eval_batch_size 8 --learning_rate 0.003 --num_steps 20000 --sm_vit --coeff_max 0.3 --fp16 --low_memory --eval_every 100 --data_root '<your_dataset_path>'
 ```
 
 ### Test only:
+```bash
+soon
+```
 
 
 <hr />
@@ -40,10 +43,13 @@ python3 -W ignore -m torch.distributed.launch --nproc_per_node 1 train.py --name
 ### Train + Test:
 
 ```bash
-python3 -W ignore -m torch.distributed.launch --nproc_per_node 1 train.py --name cub --dataset CUB --img_size 400 --train_batch_size 16 --eval_batch_size 8 --learning_rate 0.03 --num_steps 40000 --sm_vit --coeff_max 0.25 --fp16 --low_memory --data_root '<your_dataset_path>'
+python3 -W ignore -m torch.distributed.launch --nproc_per_node 1 train.py --name cub --dataset CUB --img_size 400 --train_batch_size 24 --eval_batch_size 8 --learning_rate 0.03 --num_steps 40000 --sm_vit --coeff_max 0.25 --fp16 --low_memory --data_root '<your_dataset_path>'
 ```
 
 ### Test only:
+```bash
+soon
+```
 
 
 <hr />
@@ -54,8 +60,10 @@ python3 -W ignore -m torch.distributed.launch --nproc_per_node 1 train.py --name
 ### Train + Test:
 
 ```bash
-python3 -W ignore -m torch.distributed.launch --nproc_per_node 1 train.py --name cub --dataset CUB --img_size 400 --train_batch_size 16 --eval_batch_size 8 --learning_rate 0.03 --num_steps 40000 --sm_vit --coeff_max 0.25 --fp16 --low_memory --data_root '<your_dataset_path>'
+python3 -W ignore -m torch.distributed.launch --nproc_per_node 1 train.py --name nabirds --dataset nabirds --img_size 448 --train_batch_size 16 --eval_batch_size 8 --learning_rate 0.03 --num_steps 40000 --sm_vit --coeff_max 0.25 --fp16 --low_memory --data_root '<your_dataset_path>'
 ```
 
 ### Test only:
-
+```bash
+soon
+```
