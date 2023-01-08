@@ -16,7 +16,7 @@ module load cuda-xx.x
 ### Train + Test:
 
 ```bash
---coeff_max 0.3
+python3 -W ignore -m torch.distributed.launch --nproc_per_node 1 train.py --name cub --dataset CUB --img_size 400 --train_batch_size 16 --eval_batch_size 8 --learning_rate 0.03 --num_steps 40000 --sm_vit --coeff_max 0.3 --fp16 --low_memory --data_root '<your_dataset_path>'
 ```
 
 ### Test only:
@@ -30,8 +30,7 @@ module load cuda-xx.x
 ### Train + Test:
 
 ```bash
-python3 -W ignore -m torch.distributed.launch --nproc_per_node 1 train.py --name cub --dataset CUB --img_size 400 --train_batch_size 16 --eval_batch_size 8 --learning_rate 0.03 --num_steps 40000 --coeff_max 0.25 --low_memory True --data_root '<your_dataset_path>'
-
+python3 -W ignore -m torch.distributed.launch --nproc_per_node 1 train.py --name cub --dataset CUB --img_size 400 --train_batch_size 16 --eval_batch_size 8 --learning_rate 0.03 --num_steps 40000 --sm_vit --coeff_max 0.25 --fp16 --low_memory --data_root '<your_dataset_path>'
 ```
 
 ### Test only:
@@ -45,7 +44,7 @@ python3 -W ignore -m torch.distributed.launch --nproc_per_node 1 train.py --name
 ### Train + Test:
 
 ```bash
-x
+python3 -W ignore -m torch.distributed.launch --nproc_per_node 1 train.py --name cub --dataset CUB --img_size 400 --train_batch_size 16 --eval_batch_size 8 --learning_rate 0.03 --num_steps 40000 --sm_vit --coeff_max 0.25 --fp16 --low_memory --data_root '<your_dataset_path>'
 ```
 
 ### Test only:
