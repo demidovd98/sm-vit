@@ -4,7 +4,7 @@ from __future__ import absolute_import, division, print_function
 wnb = False
 if wnb:
     import wandb
-    wandb.init(project="sm-vit", entity="demidovd98")
+    wandb.init(project="sm-vit", entity="xxx")
 
 import logging
 import argparse
