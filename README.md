@@ -100,13 +100,17 @@ For training and evaluation, please follow the instructions in [RUN.md](docs/RUN
 In case you would like to utilise or refer to our approach (source code, trained models, or results) in your research, please consider citing:
 
 ```
-@article{demidov2022smvit,
-    title = {Salient Mask-Guided Vision Transformer for Fine-Grained Classification},
-    author = {Demidov, Dmitry and Sharif, Muhammad and Abdurahimov, Aliakbar and Cholakkal, Hisham and Khan, Fahad},
-    journal={RG:20914.48323},   
-    doi = {10.13140/RG.2.2.20914.48323},    
-    year = {2022},
-    month = {08}
+@conference{demidov2022smvit,
+    author={Dmitry Demidov. and Muhammad Sharif. and Aliakbar Abdurahimov. and Hisham Cholakkal. and Fahad Khan.},
+    title={Salient Mask-Guided Vision Transformer for Fine-Grained Classification},
+    booktitle={Proceedings of the 18th International Joint Conference on Computer Vision, Imaging and Computer Graphics Theory and Applications - Volume 4: VISAPP,},
+    year={2023},
+    pages={27-38},
+    publisher={SciTePress},
+    organization={INSTICC},
+    doi={10.5220/0011611100003417},
+    isbn={978-989-758-634-7},
+    issn={2184-4321},
 }
 ```
 
